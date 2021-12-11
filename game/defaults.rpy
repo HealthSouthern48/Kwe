@@ -1,6 +1,6 @@
 # =================================================================
-# file:         script.rpy
-# description:  Main entry point of the game
+# file:         defaults.rpy
+# description:  Default values for the game
 # author:       Sheikh Saad Abdullah (A00447871)
 # =================================================================
 

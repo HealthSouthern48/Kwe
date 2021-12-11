@@ -1,6 +1,6 @@
 # =================================================================
 # file:         shopkeeper.rpy
-# description:  Main entry point of the game
+# description:  Shopkeeper character for chapter 1
 # author:       Sheikh Saad Abdullah (A00447871)
 # design:       Naziya Tasnim (A00447506)
 # =================================================================

@@ -1,6 +1,6 @@
 # =================================================================
 # file:         schoolfriend.rpy
-# description:  Main entry point of the game
+# description:  Schoolfriend character for chapter 2
 # author:       Sheikh Saad Abdullah (A00447871)
 # design:       Naziya Tasnim (A00447506)
 # =================================================================

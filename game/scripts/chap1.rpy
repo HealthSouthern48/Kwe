@@ -1,6 +1,6 @@
 # =================================================================
 # file:         chap1.rpy
-# description:  Main entry point of the game
+# description:  Chapter 1
 # author:       Sheikh Saad Abdullah (A00447871)
 # =================================================================
 

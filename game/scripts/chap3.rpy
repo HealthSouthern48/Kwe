@@ -1,6 +1,6 @@
 # =================================================================
 # file:         chap3.rpy
-# description:  Main entry point of the game
+# description:  Chapter 3
 # author:       Sheikh Saad Abdullah (A00447871)
 # author:       Naziya Tasnim (A00447506)
 # =================================================================

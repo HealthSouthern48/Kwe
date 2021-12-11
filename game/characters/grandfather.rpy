@@ -1,6 +1,6 @@
 # =================================================================
 # file:         grandfather.rpy
-# description:  Main entry point of the game
+# description:  Grandfather character for chapter 3
 # author:       Sheikh Saad Abdullah (A00447871)
 # design:       Naziya Tasnim (A00447506)
 # =================================================================
