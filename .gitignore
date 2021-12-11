@@ -3,8 +3,7 @@
 # ----------------------------------------------------------------
 
 # misc.
-game/saves/persistent
-game/cache/*
+persistent
 
 # text files
 errors.txt
