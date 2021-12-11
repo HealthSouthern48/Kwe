@@ -3,7 +3,8 @@
 # ----------------------------------------------------------------
 
 # misc.
-persistent
+game/saves/persistent
+game/cache/*
 
 # text files
 errors.txt
@@ -11,5 +12,6 @@ log.txt
 script.txt
 
 # renpy artifacts
+*.rpyb
 *.rpyc
 *.save
