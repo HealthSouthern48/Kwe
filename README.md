@@ -112,6 +112,6 @@ overwriting the existing files with the same name
 
 ---
 
-## credits:
+## Credits:
 
 Background art: [Background vector created by vectorpouch - www.freepik.com](https://www.freepik.com/vectors/background)
