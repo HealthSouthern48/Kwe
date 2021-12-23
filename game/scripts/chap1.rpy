@@ -134,5 +134,11 @@ label bye_chap1:
 
     "{b}{i}The End{/i}{/b}"
 
+    menu practice_chap1:
+        "Click the above button to practice what you've learned."
+
+        "Practice":
+            $ renpy.run(OpenURL("https://ugdev.cs.smu.ca/~group15/game/"))
+
 # return to caller
 jump end_chap1
