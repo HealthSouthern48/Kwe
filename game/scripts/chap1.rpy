@@ -11,7 +11,7 @@ label chapter_01:
     python:
         name = renpy.input("Hello, what is your name?").strip() or player_name
 
-    "Welcome, [name]!{p}\nI hope you enjoy the game."
+    "It's a pleasure to meet you.{p}\nI hope you enjoy the game."
 
 # scene 1: At the shop
 label at_shop:
