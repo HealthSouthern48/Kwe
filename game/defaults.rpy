@@ -6,6 +6,7 @@
 
 # common defaults
 default player_name = "Player"
+default flag = False
 
 # default values for chapter 1
 default passed_say = ""

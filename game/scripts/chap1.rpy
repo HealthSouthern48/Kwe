@@ -21,7 +21,7 @@ label at_shop:
 
     # TODO: comment
     menu:
-        s "{cps=0}How are you feeling, [name]?{/cps}"
+        s "{cps=0}How are you feeling?{/cps}"
 
         "I'm fine. Thank you.":
             $ feeling_well = True
@@ -107,22 +107,36 @@ label checkout:
     while len(shopping_cart) > 0:
         $ item = shopping_cart.pop(0)
         $ price = stock[item]
-        s "Here's your [item]. It costs [price:.2f] dollars."
+        s "Here's your [item]. It costs $[price:.2f]."
         $ cost += stock[item]
 
-    # TODO: comment
-    menu payment:
-        s "In total, these cost [cost:.2f] dollars. Would you like to pay in cash, or with credit card?"
+    s "In total, your items cost $[cost:.2f]."
 
-        "Cash":
-            $ amt = 10 if cost > 5 else 5
-            "{i}You hand a [amt] dollar bill to the shopkeeper.{/i}"
-            $ amt -= cost
-            if amt > 0:
-                s "Here's your change."
-                "{i}The shopkeeper returns [amt:.2f] dollars to you.{/i}"
-        "Credit Card":
-            "{i}You swipe the credit card at the POS terminal.{p}\nThe machine beeps and accepts your payment.{/i}"
+label payment:
+    python:
+        try:
+            amt = float(renpy.input("Enter the amount you want to pay.").strip())
+        except ValueError:
+            flag = True
+
+    if flag:
+        "Please enter numbers only."
+        $ flag = False
+        jump payment
+
+    "{i}You give $[amt:.2f] to the shopkeeper.{/i}"
+    $ amt -= cost
+    if amt > 0:
+        s "Here's your change."
+        "{i}The shopkeeper returns $[amt:.2f] to you.{/i}"
+    elif amt < 0:
+        hide shopkeeper happy
+        show shopkeeper worry at left
+        $ cost = -amt
+        s "Ohh, you are missing $[cost:.2f]..."
+        hide shopkeeper worry
+        show shopkeeper happy at left
+        jump payment
 
     s "Here's your receipt."
 
@@ -133,12 +147,6 @@ label bye_chap1:
     hide shopkeeper happy
 
     "{b}{i}The End{/i}{/b}"
-
-    menu practice_chap1:
-        "Click the above button to practice what you've learned."
-
-        "Practice":
-            $ renpy.run(OpenURL("https://ugdev.cs.smu.ca/~group15/game/"))
 
 # return to caller
 jump end_chap1

@@ -12,6 +12,7 @@
 persistent
 
 # text files
+traceback.txt
 errors.txt
 log.txt
 script.txt
