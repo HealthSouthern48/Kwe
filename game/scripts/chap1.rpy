@@ -115,7 +115,7 @@ label checkout:
 label payment:
     python:
         try:
-            text_input = renpy.input("Enter the amount you want to pay (Example: 5.25)").strip("$ dolar")
+            text_input = renpy.input("Enter the amount you want to pay (Example: 5.25)").strip("$dolar").strip()
             amt = float(text_input)
         except ValueError:
             flag = True
