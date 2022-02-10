@@ -12,8 +12,8 @@ default flag = False
 default passed_say = ""
 default nothing = False
 default last_say = "Anything else on your list?"
-default stock = {"lettuce": 1.25, "cucumber": 2.50, "spinach": 1.50, "bread": 4.75}
-default cart = {"lettuce": False, "cucumber": False, "spinach": False, "bread": False}
+default stock = {"milk": 1.25, "tomatoes": 2.50, "eggs": 1.50, "potatoes": 4.75}
+default cart = {"milk": False, "tomatoes": False, "eggs": False, "potatoes": False}
 
 # TODO: default values for chapter 2
 

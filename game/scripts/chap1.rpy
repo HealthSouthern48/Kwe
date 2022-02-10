@@ -45,14 +45,14 @@ label pick_items:
     menu buy_groceries:
         s "{cps=0}What [passed_say]can I get you today?{/cps}"
 
-        "Lettuce" if not cart["lettuce"]:
-            $ cart["lettuce"] = True
-        "Cucumber" if not cart["cucumber"]:
-            $ cart["cucumber"] = True
-        "Spinach" if not cart["spinach"]:
-            $ cart["spinach"] = True
-        "Bread" if not cart["bread"]:
-            $ cart["bread"] = True
+        "Milk" if not cart["milk"]:
+            $ cart["milk"] = True
+        "Tomatoes" if not cart["tomatoes"]:
+            $ cart["tomatoes"] = True
+        "Eggs" if not cart["eggs"]:
+            $ cart["eggs"] = True
+        "Potatoes" if not cart["potatoes"]:
+            $ cart["potatoes"] = True
         "Nothing":
             python:
                 nothing = True
@@ -115,12 +115,11 @@ label checkout:
 label payment:
     python:
         try:
-            amt = float(renpy.input("Enter the amount you want to pay.").strip())
+            amt = float(renpy.input("Enter the amount you want to pay (Example: 5.25)").strip())
         except ValueError:
             flag = True
 
     if flag:
-        "Please enter numbers only."
         $ flag = False
         jump payment
 
