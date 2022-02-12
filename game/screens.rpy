@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 ## Initialization
 ################################################################################
 
@@ -253,8 +253,8 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Previous Screen") action Rollback()
-            textbutton _("Things You've Seen") action ShowMenu('history')
+            textbutton _("Back") action Rollback()
+            textbutton _("Sentence List") action ShowMenu('history')
             # textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             # textbutton _("Auto") action Preference("auto-forward", "toggle")
             # textbutton _("Save") action ShowMenu('save')
@@ -305,7 +305,7 @@ screen navigation():
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            textbutton _("Sentence List") action ShowMenu("history")
 
             # textbutton _("Save") action ShowMenu("save")
 
@@ -886,7 +886,7 @@ screen history():
     ## Avoid predicting this screen, as it can be very large.
     predict False
 
-    use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
+    use game_menu(_("Sentence List"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
 
         style_prefix "history"
 

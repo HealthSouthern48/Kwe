@@ -115,7 +115,7 @@ label checkout:
 label payment:
     python:
         try:
-            text_input = renpy.input("Enter the amount you want to pay (Example: 5.25)").lstrip("$").strip()
+            text_input = renpy.input("Enter the amount you want to pay (Example: $[cost:.2f])").lstrip("$").strip()
             amt = float(text_input)
         except ValueError:
             flag = True
@@ -133,7 +133,7 @@ label payment:
         hide shopkeeper happy
         show shopkeeper worry at left
         $ cost = -amt
-        s "Ohh, you are missing $[cost:.2f]..."
+        s "Ohh, you are short by $[cost:.2f]..."
         hide shopkeeper worry
         show shopkeeper happy at left
         jump payment
