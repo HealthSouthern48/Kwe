@@ -60,7 +60,6 @@ label pick_items:
 
     $ if any(cart.values()): passed_say = "else "
 
-    # TODO: comment
     menu pickup_done:
         s "{cps=0}[last_say]{/cps}"
 
@@ -75,18 +74,12 @@ label pick_items:
 
                 jump checkout
 
-            if all(cart.values()):
-                s "Sorry, we're out of stock."
-                extend " Please come by later for more fresh produce."
-                jump checkout
+            $ out_of_stock()
 
             jump buy_groceries
         "No":
             if nothing:
-                if all(cart.values()):
-                    s "Sorry, we're out of stock."
-                    extend " Please come by later for more fresh produce."
-                    jump checkout
+                $ out_of_stock()
 
                 s "Ok, then. Let's see what I can get you."
                 python:
@@ -115,7 +108,7 @@ label checkout:
 label payment:
     python:
         try:
-            text_input = renpy.input("Enter the amount you want to pay (Example: $[cost:.2f])").lstrip("$").strip()
+            text_input = renpy.input("Enter the amount you want to pay (Example: $[cost:.2f])", default="$").lstrip("$").strip()
             amt = float(text_input)
         except ValueError:
             flag = True
@@ -133,7 +126,7 @@ label payment:
         hide shopkeeper happy
         show shopkeeper worry at left
         $ cost = -amt
-        s "Ohh, you are short by $[cost:.2f]..."
+        s "Oh, you are short by $[cost:.2f]..."
         hide shopkeeper worry
         show shopkeeper happy at left
         jump payment
