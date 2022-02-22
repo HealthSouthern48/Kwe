@@ -74,13 +74,15 @@ label pick_items:
 
                 jump checkout
 
-            $ out_of_stock()
+            if all(cart.values()):
+                $ txt = "Sorry, we're out of stock."
+                s "[txt]"
+                s "[txt] {fast}Please come by later for more fresh groceries."
+                jump checkout
 
             jump buy_groceries
         "No":
             if nothing:
-                $ out_of_stock()
-
                 s "Ok, then. Let's see what I can get you."
                 python:
                     nothing = False
