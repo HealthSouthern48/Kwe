@@ -10,6 +10,7 @@
 
 # misc.
 persistent
+.vscode
 
 # text files
 traceback.txt
