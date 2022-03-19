@@ -1,0 +1,41 @@
+What is your name: Kwe,taluisin ki’l ?
+It’s a pleasure to meet you: Weltasi welteskul.
+I hope you enjoy the game: Ajikjutm welkatmn a’katmn tuatijik.
+How are you feeling ?: Me’ katu taleyin ?
+I’m fine: O’ welayi Wela’lin.
+I’m not feeling too well: Mu Asam weleyu.
+I’m glad to hear that: weliaq
+Let’s get you some veggies to stay healthy: ke mijipjewey esemulap ta’n kelu’k.
+Oh,I’m sorry to hear that.
+Maybe some fresh veggies will brighten your mood: etuk jel mijisin aji welkat~s.
+What can I get you today ?: koqwey kisi miskmults?
+What else can I get you today?me’ ap koqwey kisi miskmult~s ?
+Nothing: mu koqwey .
+Are you sure ?: me’katu ap koqwey ?
+Yes: E’e.
+No: moqo
+Ok,then see you later: a’ nemultes kinejijk.
+Let’s see what I can get you: ke akatmap ap koqwey kisi wejitn.
+Anything else on your list?: me’ ap koqwey ewikasik .
+Sorry we are out of stock.: meskeyi kaqnemayek .
+Please come back later for more fresh groceries: Apijasit~s kjit piley mujipjewey.
+Here’s your item ,it cost newtayk.
+In total,your items cost $2.: mawatikmk tapuasaykl   telawtikl
+You are short by 30 cents: nutawtukwen (30) sitewey ???
+Here's your change: Na etek ksulioweym
+Here is your receipt: na ktuikatiknm etek.
+Have a nice day: ke'luktj na'kwekm
+Come again: jukuet~s ap.
+The end: kaqiak
+List of berries
+Blackberries: ajioqjimin
+Apples: wenjusunl
+Potatoes: tapatatk
+Onions: se'sisk
+Eggs: wawl
+Blueberries: kuwiman
+Strawberry: atuokomn
+Milk: milakej
+Cheese: te'plma's
+Bread: pipnaqn
+Corn: pieskmn
